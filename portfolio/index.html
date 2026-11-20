@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tsepo M. — Software Engineer</title>
+  <meta name="description" content="Portfolio of Tsepo M., software engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <a href="#top" class="brand"><span class="mono" data-initials></span><span data-name></span></a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="pill">Contact</a>
+      <button class="theme-btn" aria-label="Toggle theme">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="eyebrow" data-eyebrow></p>
+        <h1 data-headline></h1>
+        <p class="lead" data-summary></p>
+        <div class="ctas">
+          <a href="#work" class="btn primary">View selected work →</a>
+          <a href="#about" class="btn ghost">About me</a>
+        </div>
+      </div>
+      <div class="portrait reveal" data-portrait></div>
+    </section>
+
+    <section class="stats container" data-stats></section>
+
+    <section id="work" class="container section">
+      <div class="section-head reveal">
+        <h2>Selected work</h2>
+        <span class="muted mono-font">// things I've built</span>
+      </div>
+      <div class="projects" data-projects></div>
+    </section>
+
+    <section id="experience" class="container section">
+      <div class="section-head reveal"><h2>Experience</h2></div>
+      <ol class="timeline" data-experience></ol>
+    </section>
+
+    <section id="about" class="container section about">
+      <h2 class="reveal" data-about-heading></h2>
+      <div class="about-body reveal" data-about-body></div>
+    </section>
+
+    <section id="skills" class="container section">
+      <p class="availability reveal"><span class="dot"></span><span data-availability></span></p>
+      <ul class="skills reveal" data-skills></ul>
+    </section>
+
+    <section id="contact" class="container section contact reveal">
+      <h2>Let's build something.</h2>
+      <p class="lead">The fastest way to reach me is email or LinkedIn.</p>
+      <div class="ctas" data-contact></div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© <span data-year></span> <span data-name></span></span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
